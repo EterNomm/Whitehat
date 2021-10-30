@@ -8,7 +8,7 @@
 ⚠️ **WARNING THIS PYTHON LIBRARY FOR EDUCATIONAL PURPOSES ONLY** ⚠️
 
 ## Features
-- DDoS
+- DDoS (Can up to 1000 Requests per seconds)
 - More features soon!
 
 ## Install
