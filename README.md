@@ -1,5 +1,5 @@
-![PyPI - Downloads](https://img.shields.io/pypi/dm/whitehat?color=white&label=Downloads&logo=python)
-![PyPI](https://img.shields.io/pypi/v/whitehat?label=PyPI%20Version&logo=pypi)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/whitehat?color=white&label=Downloads&logo=python)](https://pypi.org/project/whitehat)
+[![PyPI](https://img.shields.io/pypi/v/whitehat?label=PyPI%20Version&logo=pypi)](https://pypi.org/project/whitehat)
 [![Discord](https://img.shields.io/discord/887650006977347594?color=blue&label=EterNomm&logo=discord)](https://discord.com/invite/qpT2AeYZRN)
 [![Discord](https://img.shields.io/discord/835863428450877441?color=blue&label=NekoIceTeam&logo=discord)](https://discord.com/invite/hNtA2uEb7J)
 
