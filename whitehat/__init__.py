@@ -1,3 +1,3 @@
 from .ddos import *
 from .phonenumber import *
-from .wifi import *
+from .my_wifi import *
