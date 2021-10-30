@@ -13,7 +13,7 @@ def read_requirements():
 
 setup(
     name='whitehat',
-    version="0.2",
+    version="0.3",
     author='LyQuid',
     author_email='lyquidpersonal@gmail.com',
     description = 'Python Library For Ethical Hacker',
