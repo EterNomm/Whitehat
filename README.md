@@ -8,17 +8,12 @@
 ⚠️ **WARNING THIS PYTHON LIBRARY FOR EDUCATIONAL PURPOSES ONLY** ⚠️
 
 ## Features
-- DDoS (Can up to 1000 Requests per seconds)
+- DDoS (Can up to 1500+ Requests per seconds)
+- Get Phonenumber Info
 - More features soon!
 
 ## Install
 `pip install whitehat`
 
 ## Example
-- ### DDoS
-```
-import whitehat
-
-ddos = whitehat.ddos_target("0.0.0.0", 80, 1200)  #IP, PORT, DURATION
-whitehat.start_ddos(ddos)
-```
+[Click here](https://github.com/EterNomm/Whitehat/tree/main/examples)
