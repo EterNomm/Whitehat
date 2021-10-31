@@ -2,7 +2,6 @@ import random
 from .utilities.ddos_util import *
 
 class ddos:
-    attack_count = 0
     def target(IP, PORT, duration):
         ip1 = random.randint(100, 999)
         ip2 = random.randint(10, 999)
