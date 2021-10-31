@@ -12,7 +12,7 @@ class ip:
         data = json.load(response)
 
         loc=data['loc']
-        print(loc)
+        return loc
 
     def get_info(self):
         ip_addr = self.ip
@@ -28,15 +28,6 @@ class ip:
         postal=data['postal']
         loc=data['loc']
         hostname=data['hostname']
-        
-        print()
-        print(f"IP : {ip}")
-        print(f"Hostname : {hostname}")
-        print(f"City : {city}")
-        print(f"Region : {region}")
-        print(f"Country : {country}")
-        print(f"Location : {loc}")
-        print(f"Organization : {org}")
-        print(f"Post Code : {postal}")
-        print(f"Timezone : {time_zone}")
-        print()
+
+        all_info = f"\nIP : {ip}\nHostname : {hostname}\nCity : {city}\nRegion : {region}\nCountry : {country}\nLocation : {loc}\nOrganization : {org}\nPost Code : {postal}\nTimezone : {time_zone}\n"
+        return all_info
