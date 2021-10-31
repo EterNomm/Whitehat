@@ -11,9 +11,13 @@ def read_requirements():
     return requirements
 
 
+#####################################
+VERSION = "0.4"
+#####################################
+
 setup(
     name='whitehat',
-    version="0.3.2",
+    version=VERSION,
     author='LyQuid',
     author_email='lyquidpersonal@gmail.com',
     description = 'Python Library For Ethical Hacker',
