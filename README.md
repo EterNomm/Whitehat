@@ -41,4 +41,6 @@ Want to be a contributor? [Pull Request](https://github.com/EterNomm/Whitehat/pu
 Sorry if we often update Whitehat (in one day can be 5+ updates).
 because this version is still in BETA and we want version 1.0.0 (ALPHA version) to be released before 2022,
 so we are pressed for time to quickly release the ALPHA version (stable version)
+
+- Whitehat Developers
 ```
