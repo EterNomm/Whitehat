@@ -24,5 +24,7 @@ class my_wifi:
                         wifi_profile["password"] = password[1]
                     wifi_list.append(wifi_profile) 
         
+        print()
         for x in range(len(wifi_list)):
             print(wifi_list[x])
+        print()
