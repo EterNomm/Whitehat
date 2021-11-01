@@ -12,7 +12,7 @@ def read_requirements():
 
 
 #####################################
-VERSION = "0.5"
+VERSION = "0.5.1"
 #####################################
 
 setup(
@@ -20,7 +20,7 @@ setup(
     version=VERSION,
     author='LyQuid',
     author_email='lyquidpersonal@gmail.com',
-    description = 'Python Library For Ethical Hacker',
+    description = 'Python Packages For Ethical Hacker',
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='Apache License 2.0',
@@ -30,8 +30,7 @@ setup(
     install_requires=read_requirements(),
     keywords=["python", "hacker", "whitehat", "hacker tool", "ethical hacker"],
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
-        'License :: OSI Approved :: MIT License',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: Android',
