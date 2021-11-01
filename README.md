@@ -1,5 +1,6 @@
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/whitehat?label=PyPI%20Downloads&logo=pypi&logoColor=yellow)](https://pypi.org/project/whitehat)
 [![PyPI](https://img.shields.io/pypi/v/whitehat?label=PyPI%20Version&logo=pypi&logoColor=yellow)](https://pypi.org/project/whitehat)
+[![PyPI - Status](https://img.shields.io/pypi/status/Whitehat?label=Pakcage%20Status&logo=Python&logoColor=lightblue)](https://pypi.org/project/whitehat#data)
 [![GitHub repo size](https://img.shields.io/github/repo-size/EterNomm/Whitehat?label=Repo%20Size&logo=Github)](https://github.com/EterNomm/Whitehat)
 [![Discord](https://img.shields.io/discord/887650006977347594?color=blue&label=EterNomm&logo=discord)](https://discord.com/invite/qpT2AeYZRN)
 [![Discord](https://img.shields.io/discord/835863428450877441?color=blue&label=NekoIceTeam&logo=discord)](https://discord.com/invite/hNtA2uEb7J)
@@ -12,6 +13,7 @@
 - DDoS (Can up to 1500+ Requests per seconds)
 - Get Phonenumber Info
 - Get IP Address Information
+- Keylogger
 - More features soon!
 
 ## Install
