@@ -28,5 +28,16 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=read_requirements(),
-    keywords=["python", "hacker", "whitehat", "hacker tool", "ethical hacker"]
+    keywords=["python", "hacker", "whitehat", "hacker tool", "ethical hacker"],
+    classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'License :: OSI Approved :: MIT License',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: Apache Software License',
+        'Operating System :: Android',
+        'Operating System :: Microsoft :: Windows',
+        'Operating System :: MacOS',
+        'Operating System :: POSIX :: Linux',
+        'Programming Language :: Python'
+    ]
 )
