@@ -1,9 +1,15 @@
 import json
 from urllib.request import urlopen
+import socket
 
 class ip:
     def __init__(self, ip_address):
         self.ip = ip_address
+
+    def get_ip(website):
+        ip_addr = socket.gethostbyname(website)
+        ip_addr = f"{website}   :   {ip_addr}"
+        return ip_addr
 
     def get_location(self):
         ip_addr = self.ip
