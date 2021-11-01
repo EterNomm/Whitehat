@@ -1,7 +1,7 @@
 import socket
 
 class port:
-    def __init__(self, IP, PORT):
+    def __init__(self, IP: str, PORT: int):
         self.IP = IP
         self.PORT = PORT
 

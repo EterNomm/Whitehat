@@ -1,39 +1,45 @@
 import json
+from typing import Dict, Any
 from urllib.request import urlopen
-import socket
 
 class ip:
-    def __init__(self, ip_address):
+    def __init__(self, ip_address: str):
         self.ip = ip_address
+        res=urlopen(f'http://ipinfo.io/{self.ip}/json')
+        self.res = json.load(res)
 
-    def get_ip(website):
-        ip_addr = socket.gethostbyname(website)
-        ip_addr = f"{website}   :   {ip_addr}"
-        return ip_addr
+    @property
+    def location(self) -> str:
+        return self.res.get('loc')
 
-    def get_location(self):
-        ip_addr = self.ip
-        url = f'http://ipinfo.io/{ip_addr}/json'
-        response = urlopen(url)
-        data = json.load(response)
+    @property
+    def org(self) -> str:
+        return self.res.get('org')
 
-        loc=data['loc']
-        return loc
+    @property
+    def city(self) -> str:
+        return self.res.get('city')
 
-    def get_info(self):
-        ip_addr = self.ip
-        url = f'http://ipinfo.io/{ip_addr}/json'
-        response = urlopen(url)
-        data = json.load(response)
-        ip=data['ip']
-        org=data['org']
-        city = data['city']
-        country=data['country']
-        region=data['region']
-        time_zone=data['timezone']
-        postal=data['postal']
-        loc=data['loc']
-        hostname=data['hostname']
+    @property
+    def country(self) -> str:
+        return self.res.get('country')
 
-        all_info = f"\nIP : {ip}\nHostname : {hostname}\nCity : {city}\nRegion : {region}\nCountry : {country}\nLocation : {loc}\nOrganization : {org}\nPost Code : {postal}\nTimezone : {time_zone}\n"
-        return all_info
+    @property
+    def region(self) -> str:
+        return self.res.get('region')
+
+    @property
+    def timezone(self) -> str:
+        return self.res.get('timezone')
+
+    @property
+    def postal(self) -> str:
+        return self.res.get('postal')
+
+    @property
+    def hostname(self) -> str:
+        return self.res.get('hostname')
+
+    def get_all_info(self) -> Dict[str, Any]:
+        data = {"ip" : {self.ip}, "hostname" : self.hostname, "city" : self.city, "region" : self.region, "country" : self.country, "location" : self.location, "organization" : self.org, "Post" : self.postal, "timezone" : self.timezone}
+        return data

