@@ -36,7 +36,7 @@ $ pip install git+https://github.com/EterNomm/Whitehat
 
 
 ## Other
-Want to be a contributor? [Pull Request](https://github.com/EterNomm/Whitehat/pulls) are welcome :3
+- Want to be a contributor? [Pull Request](https://github.com/EterNomm/Whitehat/pulls) are welcome :3
 
 - **Note from Developers :**
 ```
