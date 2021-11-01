@@ -16,6 +16,7 @@
 - Get Phonenumber Info
 - Get IP Address Information
 - Keylogger
+- Port Scanner (In Development)
 - More features soon!
 
 ## Install
