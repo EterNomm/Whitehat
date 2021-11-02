@@ -40,6 +40,12 @@ class ip:
     def hostname(self) -> str:
         return self.res.get('hostname')
 
-    def get_all_info(self) -> Dict[str, Any]:
-        data = {"ip" : {self.ip}, "hostname" : self.hostname, "city" : self.city, "region" : self.region, "country" : self.country, "location" : self.location, "organization" : self.org, "Post" : self.postal, "timezone" : self.timezone}
+    def get_all_info(self, format:str):
+        if format == "list":
+            data = f"\nIP : {self.ip}\nHostname : {self.hostname}\nCity : {self.city}\nRegion : {self.region}\nCountry : {self.country}\nLocation : {self.location}\nOrganization : {self.org}\nPost Code : {self.postal}\nTimezone : {self.timezone}\n"
+        if format == "json":
+            data = {"ip" : {self.ip}, "hostname" : self.hostname, "city" : self.city, "region" : self.region, "country" : self.country, "location" : self.location, "organization" : self.org, "post code" : self.postal, "timezone" : self.timezone}
+        if format == None:
+            data = "Error : format cannot blank\nformat : list, json"
+        
         return data
