@@ -1,41 +1,31 @@
 import phonenumbers
+from typing import Optional, Tuple, Dict, Any
 from phonenumbers import carrier, geocoder, timezone
 
 class phonenumber:
-    def __init__(self, phone_number):
-        pn = phonenumbers.parse(phone_number)
-        self.phone_number = pn
-        print()
-        print(pn)
+    def __init__(self, phone_number: str):
+        self.phone_number = phonenumbers.parse(phone_number)
+        self.provider = self.carrier #An alias to self.carrier
+        
+    @property
+    def timezone(self) -> Optional[Tuple[str]]:
+        tz = timezone.time_zones_for_number(self.phone_number)
+        return tz
 
-    def timezone(self):
-        phone_number = self.phone_number
-        tz = timezone.time_zones_for_number(phone_number)
-        print(f"Timezone : {tz}")
+    @property
+    def carrier(self) -> str:
+        provider = carrier.name_for_number(self.phone_number, "en")
+        return provider
 
-    def carrier(self):
-        phone_number = self.phone_number
-        provider = carrier.name_for_number(phone_number, "en")
-        print(f"Carrier : {provider}")
+    @property
+    def region(self) -> str:
+        region = geocoder.description_for_number(self.phone_number, "en")
+        return region
 
-    def region(self):
-        phone_number = self.phone_number
-        region = geocoder.description_for_number(phone_number, "en")
-        print(f"Region : {region}")
+    def is_valid(self) -> bool:
+        is_valid = phonenumbers.is_valid_number(self.phone_number)
+        return is_valid
 
-    def is_valid(self):
-        phone_number = self.phone_number
-        is_valid = phonenumbers.is_valid_number(phone_number)
-        print(f"Is Valid Phone Number : {is_valid}")
-
-    def get_all_info(self):
-        phone_number = self.phone_number
-        tz = timezone.time_zones_for_number(phone_number)
-        provider = carrier.name_for_number(phone_number, "en")
-        region = geocoder.description_for_number(phone_number, "en")
-        is_valid = phonenumbers.is_valid_number(phone_number)
-        print(f"Timezone : {tz}")
-        print(f"Carrier : {provider}")
-        print(f"Region : {region}")
-        print(f"Is Valid Phone Number : {is_valid}")
-        print()
+    def get_all_info(self) -> Dict[str, Any]:
+        data={'timezone': self.timezone, "provider": self.provider, "region": self.region, "is_valid": self.is_valid()}
+        return data
