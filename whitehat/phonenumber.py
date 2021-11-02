@@ -26,6 +26,10 @@ class phonenumber:
         is_valid = phonenumbers.is_valid_number(self.phone_number)
         return is_valid
 
-    def get_all_info(self) -> Dict[str, Any]:
-        data={'timezone': self.timezone, "provider": self.provider, "region": self.region, "is_valid": self.is_valid()}
+    def get_all_info(self, format:str) -> Dict[str, Any]:
+        if format == "json":
+            data={'timezone': self.timezone, "provider": self.provider, "region": self.region, "is_valid": self.is_valid()}
+        if format == "list":
+            data=f"Timezone : {self.timezone}\nProvider : {self.provider}\nRegion : {self.region}\nIs Valid : {self.is_valid()}"
+
         return data
