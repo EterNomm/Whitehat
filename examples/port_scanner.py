@@ -1,4 +1,4 @@
 import whitehat
 
-port = whitehat.port("IP", 8000)
-port.scan()
+port = whitehat.port_scan("IP", 8000)
+print(port)
