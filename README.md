@@ -9,7 +9,7 @@
 
 # Whitehat
 
-⚠️ **WARNING THIS PYTHON LIBRARY FOR EDUCATIONAL PURPOSES ONLY** ⚠️
+⚠️ **WARNING THIS PYTHON PACKAGES FOR EDUCATIONAL PURPOSES ONLY** ⚠️
 
 ## Features
 - DDoS (Can up to 1500+ Requests per seconds)
