@@ -12,7 +12,7 @@ def read_requirements():
 
 
 #####################################
-VERSION = "0.6.1"
+VERSION = "0.7"
 #####################################
 
 setup(
@@ -30,7 +30,7 @@ setup(
     install_requires=read_requirements(),
     keywords=["python", "hacker", "whitehat", "hacker tool", "ethical hacker"],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: Android',
