@@ -1,4 +1,5 @@
 [![Visistors](https://visitor-badge.glitch.me/badge?page_id=EterNomm.Whitehat)](https://github.com/EterNomm/Whitehat)
+[![Downloads](https://static.pepy.tech/personalized-badge/whitehat?period=month&units=international_system&left_color=grey&right_color=yellowgreen&left_text=Total%20Downloads)](https://pepy.tech/project/whitehat)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/whitehat?label=PyPI%20Downloads&logo=pypi&logoColor=yellow)](https://pypi.org/project/whitehat)
 [![PyPI](https://img.shields.io/pypi/v/whitehat?label=PyPI%20Version&logo=pypi&logoColor=yellow)](https://pypi.org/project/whitehat)
 [![PyPI - Status](https://img.shields.io/pypi/status/whitehat?label=Packages%20Status&logo=python&logoColor=lightblue)](https://pypi.org/project/whitehat#data)
