@@ -7,7 +7,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/EterNomm/Whitehat?label=Stars)](https://github.com/EterNomm/Whitehat/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/EterNomm/Whitehat?label=Forks)](https://github.com/EterNomm/Whitehat/network)
 [![Discord](https://img.shields.io/discord/887650006977347594?color=blue&label=EterNomm&logo=discord&logoColor=lightblue)](https://discord.com/invite/qpT2AeYZRN)
-[![Discord](https://img.shields.io/discord/835863428450877441?color=blue&label=NekoIceTeam&logo=discord&logoColor=lightblue)](https://discord.com/invite/hNtA2uEb7J)
 
 # Whitehat
 
