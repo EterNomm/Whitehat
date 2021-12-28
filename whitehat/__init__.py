@@ -10,7 +10,7 @@ print("This Project fully owned by EterNomm")
 print("Join EterNomm Discord Here : https://dsc.gg/eternomm")
 
 __title__ = "Whitehat"
-__version__ = "1.0"
+__version__ = "1.1"
 __authors__ = ["LyQuid", "EterNomm"]
 __license__ = "Apache License 2.0"
 __copyright__ = "Copyright 2021 EterNomm"
