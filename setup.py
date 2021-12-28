@@ -1,7 +1,15 @@
 from setuptools import setup, find_packages
+import re
 
 with open('README.md') as f:
     long_description = f.read()
+
+version = ''
+with open('whitehat/__init__.py') as f:
+    version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
+
+if not version:
+    raise RuntimeError('Version is not set')
 
 def read_requirements():
     with open('requirements.txt', 'r') as req:
@@ -11,20 +19,20 @@ def read_requirements():
     return requirements
 
 
-#####################################
-VERSION = "1.0"
-#####################################
-
 setup(
     name='whitehat',
-    version=VERSION,
+    version=version,
     author='LyQuid',
     author_email='lyquidpersonal@gmail.com',
-    description = 'Python Packages For Ethical Hacker',
+    description = 'Python Packages For Ethical Hacking',
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='Apache License 2.0',
     url='https://github.com/EterNomm/Whitehat',
+    project_urls={
+        "Discord": "https://discord.gg/qpT2AeYZRN",
+        "Issue tracker": "https://github.com/EterNomm/Whitehat/issues",
+    },
     packages=find_packages(),
     include_package_data=True,
     install_requires=read_requirements(),
