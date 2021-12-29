@@ -1,6 +1,6 @@
 import whitehat
 
-pn = whitehat.phonenumber("+6281553888046") # Don't forget to use Country Code. Ex : +62 / +1
+pn = whitehat.phonenumber("+1234567890") # Don't forget to use Country Code. Ex : +62 / +1
 
 print(pn.timezone)
 print(pn.carrier)
