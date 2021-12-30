@@ -5,9 +5,11 @@ from .ip import *
 from .keylogger import *
 from .port_scanner import *
 from .reverse_shell import *
+from .errors import *
 
 print("This Project fully owned by EterNomm")
 print("Join EterNomm Discord Here : https://dsc.gg/eternomm")
+print()
 
 __title__ = "Whitehat"
 __version__ = "1.1"
