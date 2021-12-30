@@ -5,5 +5,5 @@ class WhitehatErrors(Exception):
         super().__init__(message)
         
 class InvalidFormat(WhitehatErrors):
-	def __init__(self):
-            super().__init__("Invalid Format. Supported formats : 'list', 'json'")
+    def __init__(self):
+        super().__init__("Invalid Format. Supported formats : 'list', 'json'")
