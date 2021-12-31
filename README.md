@@ -12,6 +12,8 @@
 
 ⚠️ **WARNING THIS PYTHON PACKAGES FOR EDUCATIONAL PURPOSES ONLY** ⚠️
 
+[![Whitehat Changelog](https://img.shields.io/badge/Whitehat-Changelog-informational?style=for-the-badge&logo=github)](https://gist.github.com/LyQuid12/1598aac0765fcde6bf5d4a2d0df083a4)
+
 ## Key Features
 - DDoS
 - Key Logger
