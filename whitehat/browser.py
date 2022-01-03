@@ -1,6 +1,7 @@
 import os
 import sqlite3
 import platform
+import shutil
 
 from .errors import *
 
@@ -19,6 +20,9 @@ class Browser:
         self.os = platform.uname()[0]
 
     def get_all_history(self):
+        r"""
+        Get all history of your browser
+        """
         browser_name = self.browser_name
         self_os = self.os
 
@@ -29,11 +33,15 @@ class Browser:
                 data_path = os.path.expanduser('~')+"\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
                 files = os.listdir(data_path)
                 
-                history_db = os.path.join(data_path, 'history')
+                temp_path = os.path.expanduser('~')+"\\AppData\\Local\\Temp"
+                
+                shutil.copyfile(os.path.join(data_path, 'History'),os.path.join(temp_path,'History.db'))
+                
+                history_db = os.path.join(temp_path,'History.db')
                 con = sqlite3.connect(history_db)
                 c = con.cursor()
                 
-                c.execute("select url, last_visit_time from urls")
+                c.execute("select url, visit_count, last_visit_time from urls")
                 results = c.fetchall()
                 
                 for r in results:
@@ -41,7 +49,7 @@ class Browser:
                     r = r.replace("(", "")
                     r = r.replace(")", "")
                     r = r.replace("'", "")
-                    r = r.replace(",", " - Last time visited :")
+                    r = r.replace(",", " -")
                     print(r)
                     
                 c.close()
