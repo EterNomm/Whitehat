@@ -1,10 +1,23 @@
 import json
 from typing import Dict, Any
 from urllib.request import urlopen
+import socket
+from .errors import *
 
-class ip:
-    def __init__(self, ip_address: str):
-        self.ip = ip_address
+class IP:
+    r"""A class that implements DDoS function
+    -----------
+    Parameters :
+    - IP: :class:`str` | Set IP
+    """
+
+    def __init__(self, IP:str):
+        invalid_ip = ["https://", "http://"]
+
+        if any(v in IP for v in invalid_ip):
+            raise InvalidIP
+
+        self.ip = IP
         res=urlopen(f'http://ipinfo.io/{self.ip}/json')
         self.res = json.load(res)
 
@@ -40,12 +53,37 @@ class ip:
     def hostname(self) -> str:
         return self.res.get('hostname')
 
+
     def get_all_info(self, format:str):
+        r"""
+        A method to get all IP info
+        -----
+        Parameters :
+        - format: `str` | list or json
+        """
+
         if format == "list":
             data = f"\nIP : {self.ip}\nHostname : {self.hostname}\nCity : {self.city}\nRegion : {self.region}\nCountry : {self.country}\nLocation : {self.location}\nOrganization : {self.org}\nPost Code : {self.postal}\nTimezone : {self.timezone}\n"
-        if format == "json":
+        elif format == "json":
             data = {"ip" : {self.ip}, "hostname" : self.hostname, "city" : self.city, "region" : self.region, "country" : self.country, "location" : self.location, "organization" : self.org, "post code" : self.postal, "timezone" : self.timezone}
-        if format == None:
-            data = "Error : format cannot blank\nformat : list, json"
+        else:
+            raise InvalidFormat
         
         return data
+
+    
+    @classmethod
+    def get_ip(self, url:str):
+        r"""
+        A method to get IP by URL/web address
+        -----
+        Parameters :
+        - format: `str` | list or json
+        """
+        invalid_url = ["https://", "http://"]
+
+        if any(v in url for v in invalid_url):
+            raise InvalidURL
+
+        ip = socket.gethostbyname(url)
+        return ip
