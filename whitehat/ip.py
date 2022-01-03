@@ -5,7 +5,7 @@ import socket
 from .errors import *
 
 class IP:
-    r"""A class that implements DDoS function
+    r"""A class that implements IP function
     -----------
     Parameters :
     - IP: :class:`str` | Set IP
