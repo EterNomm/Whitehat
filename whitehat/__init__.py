@@ -1,18 +1,18 @@
 from .ddos import *
 from .phonenumber import *
-from .my_wifi import *
+from .wifi import *
 from .ip import *
 from .keylogger import *
-from .port_scanner import *
+from .port import *
 from .reverse_shell import *
-from .errors import *
+from .browser import *
 
 print("This Project fully owned by EterNomm")
 print("Join EterNomm Discord Here : https://dsc.gg/eternomm")
 print()
 
 __title__ = "Whitehat"
-__version__ = "1.1"
+__version__ = "1.2"
 __authors__ = ["LyQuid", "EterNomm"]
 __license__ = "Apache License 2.0"
-__copyright__ = "Copyright 2021 EterNomm"
+__copyright__ = "Copyright 2022 EterNomm"
