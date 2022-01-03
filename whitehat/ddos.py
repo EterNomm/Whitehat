@@ -7,7 +7,7 @@ class DDoS:
     -----------
     Parameters :
     - IP: :class:`str` | Set target IP
-    - PORT: :class:`int` | Set target (Default : 80)
+    - PORT: :class:`int` | Set target PORT (Default : 80)
     - duration: :class:`int` | Set DDoS duration (Default : 120) 
     """
 
