@@ -71,14 +71,13 @@ class IP:
         
         return data
 
-    
     @classmethod
     def get_ip(self, url:str):
         r"""
         A method to get IP by URL/web address
         -----
         Parameters :
-        - format: `str` | list or json
+        - url: `str` | Target URL. Cannot include : https:// and http://
         """
         invalid_url = ["https://", "http://"]
 
