@@ -36,4 +36,5 @@ class DDoS:
         for i in range(self.duration):
             ddos_util(IP=self.IP, PORT=self.PORT, fake_ip=self.fake_ip)
             print("Attack sent!")
+            
         self.start()
