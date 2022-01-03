@@ -2,9 +2,17 @@ import phonenumbers
 from typing import Optional, Tuple, Dict, Any
 from phonenumbers import carrier, geocoder, timezone
 
-class phonenumber:
-    def __init__(self, phone_number: str):
-        self.phone_number = phonenumbers.parse(phone_number)
+from .errors import *
+
+class Phonenumber:
+    r"""A class that implements Keylogger function
+    -----------
+    Paramaters :
+    - phonenumber: `str` | Set phonenumber (Must include country code)
+    """
+
+    def __init__(self, phonenumber: str):
+        self.phone_number = phonenumbers.parse(phonenumber)
         self.provider = self.carrier #An alias to self.carrier
         
     @property
@@ -27,9 +35,18 @@ class phonenumber:
         return is_valid
 
     def get_all_info(self, format:str) -> Dict[str, Any]:
+        r"""
+        Get all phonenumber information
+        -----
+        Paramater :
+        - format: `str` | list/json
+        """
         if format == "json":
             data={'timezone': self.timezone, "provider": self.provider, "region": self.region, "is_valid": self.is_valid()}
-        if format == "list":
+        elif format == "list":
             data=f"Timezone : {self.timezone}\nProvider : {self.provider}\nRegion : {self.region}\nIs Valid : {self.is_valid()}"
+
+        else:
+            raise InvalidFormat
 
         return data
