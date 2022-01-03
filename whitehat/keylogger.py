@@ -11,7 +11,7 @@ class Keylogger:
     
     @classmethod
     def start(self, logfile_path:str=None, allow_print=False):
-        r"""A class that implements Keylogger function
+        r"""Start Keylogger
         -----------
         Paramaters :
         - logfile_path: `str` | Log file path (txt)
