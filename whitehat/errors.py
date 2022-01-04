@@ -25,9 +25,9 @@ class UnsupportedOS(WhitehatErrors):
         super().__init__(f"Error : {OS} is not supported on this function. Supported OS : {supported_os}")
 
 class CannotNone(WhitehatErrors):
-    def __init__(self, parameter: str = None):
+    def __init__(self, parameter:str=None):
         super().__init__(f"Error : '{parameter}' cannot None")
 
 class UnsupportedBrowser(WhitehatErrors):
-    def __init__(self, Browser:str="Your Browser", supported_os:str=None):
+    def __init__(self, Browser:str="Your Browser"):
         super().__init__(f"Error : {Browser} is not supported on this function.")
