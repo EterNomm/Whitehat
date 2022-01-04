@@ -6,6 +6,7 @@ from .keylogger import *
 from .port import *
 from .reverse_shell import *
 from .browser import *
+from .bruteforce import *
 
 print("This Project fully owned by EterNomm")
 print("Join EterNomm Discord Here : https://dsc.gg/eternomm")
