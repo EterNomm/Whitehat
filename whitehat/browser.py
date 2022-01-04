@@ -22,6 +22,10 @@ class Browser:
     def get_all_history(self):
         r"""
         Get all history of your browser
+        ---
+        Supported OS:
+        - Windows
+        - Linux (Unstable)
         """
         browser_name = self.browser_name
         self_os = self.os
@@ -31,7 +35,6 @@ class Browser:
         if any(v in browser_name for v in chrome):
             if self_os == "Windows":
                 data_path = os.path.expanduser('~')+"\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
-                files = os.listdir(data_path)
                 
                 temp_path = os.path.expanduser('~')+"\\AppData\\Local\\Temp"
                 
@@ -53,9 +56,30 @@ class Browser:
                     print(r)
                     
                 c.close()
+
+            elif self_os == "Linux":
+
+                data_path = os.path.expanduser('~')+"/.config/google-chrome/Default/History"
+
+                con = sqlite3.connect(data_path)
+                c = con.cursor()
+                 
+                # Change this to your preferred query
+                c.execute("select url, visit_count, last_visit_time from urls")
+                results = c.fetchall()
+                
+                for r in results:
+                    r = str(r)
+                    r = r.replace("(", "")
+                    r = r.replace(")", "")
+                    r = r.replace("'", "")
+                    r = r.replace(",", " -")
+                    print(r)
+                    
+                c.close()
             
             else:
-                raise UnsupportedOS(supported_os="Windows")
+                raise UnsupportedOS(supported_os="Windows, Linux")
             
         else:
             raise UnsupportedBrowser
