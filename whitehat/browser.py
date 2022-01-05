@@ -19,9 +19,12 @@ class Browser:
         self.browser_name = browser_name
         self.os = platform.uname()[0]
 
-    def get_all_history(self):
+    def get_history(self, show:int="all"):
         r"""
-        Get all history of your browser
+        Get history of your browser
+        ---
+        Parameter :
+        - show: `int` | How much history should be displayed (Default : all)
         ---
         Supported OS:
         - Windows
@@ -40,41 +43,72 @@ class Browser:
                 
                 shutil.copyfile(os.path.join(data_path, 'History'),os.path.join(temp_path,'History.db'))
                 
-                history_db = os.path.join(temp_path,'History.db')
-                con = sqlite3.connect(history_db)
-                c = con.cursor()
-                
-                c.execute("select url, visit_count, last_visit_time from urls")
-                results = c.fetchall()
-                
+                db_path = os.path.join(temp_path,'History.db')
+                connect = sqlite3.connect(db_path)
+                c = connect.cursor()
+
+                sql_sort = """
+                SELECT url,
+                datetime(last_visit_time/1000000-11644473600,'unixepoch','localtime'),
+                visit_count FROM urls
+                """
+
+                try:
+                    c.execute(sql_sort)
+                except sqlite3.OperationalError:
+                    raise DatabaseLocked
+
+                if show == "all":
+                    results = c.fetchall()
+                else:
+                    results = c.fetchmany(show)
+
+                list_num = 0
+
                 for r in results:
+                    list_num = list_num+1
                     r = str(r)
                     r = r.replace("(", "")
                     r = r.replace(")", "")
                     r = r.replace("'", "")
-                    r = r.replace(",", " -")
-                    print(r)
+
+                    print(f"{list_num} | {r}")
                     
                 c.close()
 
             elif self_os == "Linux":
 
-                data_path = os.path.expanduser('~')+"/.config/google-chrome/Default/History"
+                db_path = os.path.expanduser('~')+"/.config/google-chrome/Default/History"
 
-                con = sqlite3.connect(data_path)
-                c = con.cursor()
+                connect = sqlite3.connect(db_path)
+                c = connect.cursor()
                  
-                # Change this to your preferred query
-                c.execute("select url, visit_count, last_visit_time from urls")
-                results = c.fetchall()
-                
+                sql_sort = """
+                SELECT url,
+                datetime(last_visit_time/1000000-11644473600,'unixepoch','localtime'),
+                visit_count FROM urls
+                """
+
+                try:
+                    c.execute(sql_sort)
+                except sqlite3.OperationalError:
+                    raise DatabaseLocked
+
+                if show == "all":
+                    results = c.fetchall()
+                else:
+                    results = c.fetchmany(show)
+
+                list_num = 0
+
                 for r in results:
+                    list_num = list_num+1
                     r = str(r)
                     r = r.replace("(", "")
                     r = r.replace(")", "")
                     r = r.replace("'", "")
-                    r = r.replace(",", " -")
-                    print(r)
+
+                    print(f"{list_num} | {r}")
                     
                 c.close()
             
