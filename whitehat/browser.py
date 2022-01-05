@@ -11,7 +11,7 @@ class Browser:
     Parameters :
     - browser_name: :class:`str` | Set browser name
 
-    Browser support :
+    Supported Browser :
     - Chrome
     """
 
@@ -26,7 +26,7 @@ class Browser:
         Parameter :
         - show: `int` | How much history should be displayed (Default : all)
         ---
-        Supported OS:
+        Supported OS :
         - Windows
         - Linux (Unstable)
         """
