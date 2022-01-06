@@ -30,13 +30,14 @@ setup(
     license='Apache License 2.0',
     url='https://github.com/EterNomm/Whitehat',
     project_urls={
+        "Source Code": "https://github.com/EterNomm/Whitehat",
         "Discord": "https://discord.gg/qpT2AeYZRN",
-        "Issue tracker": "https://github.com/EterNomm/Whitehat/issues",
+        "Issue tracker": "https://github.com/EterNomm/Whitehat/issues"
     },
     packages=find_packages(),
     include_package_data=True,
     install_requires=read_requirements(),
-    keywords=["python", "hacker", "whitehat", "hacker tool", "ethical hacker"],
+    keywords=["python", "hacker", "whitehat", "hacker tool", "ethical hacking"],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
