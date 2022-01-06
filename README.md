@@ -26,7 +26,8 @@
 - Keylogger
 - Port Scanner
 - Reverse Shell
-- See all Browser history (Beta)
+- See Browser history (Beta)
+- Brute Force
 
 ## Install
 - ### PIP
