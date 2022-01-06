@@ -28,6 +28,7 @@
 - Reverse Shell
 - See Browser history (Beta)
 - Brute Force
+- Caesar Cipher encryption
 
 ## Install
 - ### PIP
