@@ -1,26 +1,13 @@
 import string
-from .errors import *
+from ..errors import *
 
 class CaesarCipher:
-    r"""A class that implements Caesar Cipher encryption
-    -----------
-    Classmethod :
-    - encrypt
-    - decrypt
-    """
 
     def __init__(self):
         pass
 
     @classmethod
-    def encrypt(self, text:str=None, shift:int=2):
-        r"""A method that implements encrypting strings to Caesar Cipher encryption
-        -----------
-        Parameters :
-        - text: `str` | Set string to encrypt
-        - shift: `int` | Set encryption shift. Cannot exceed 25 (Default : 2)
-        """
-
+    def encrypt(self, text, shift):
         if text == None:
             raise CannotNone("text")
         if shift >= 26:
@@ -40,14 +27,7 @@ class CaesarCipher:
         return text.translate(table)
 
     @classmethod
-    def decrypt(self, cipher:str=None, shift:int=2):
-        r"""A method that implements Caesar Cipher decryption to string
-        -----------
-        Parameters :
-        - cipher: `str` | Set Caesar Cipher string to decrypt
-        - shift: `int` | Set encryption shift. Cannot exceed 25 (Default : 2)
-        """
-
+    def decrypt(self, cipher, shift):
         if cipher == None:
             raise CannotNone("cipher")
         if shift >= 26:
