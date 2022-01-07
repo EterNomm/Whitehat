@@ -29,21 +29,17 @@
 - Reverse Shell
 - See Browser history (Beta)
 - Brute Force
-- Caesar Cipher encryption
+- Common Cryptography encryption, such as Caesar Cipher, Morse, Binary
 
 ## Install
 - ### PIP
-`pip install whitehat`
+```
+pip install whitehat
+```
 
-- ### Development Version
+- ### Advanced version (Not always available, dependent to update)
 ```
-$ git clone https://github.com/EterNomm/Whitehat
-$ cd whitehat
-$ pip install .
-```
-or
-```
-$ pip install git+https://github.com/EterNomm/Whitehat
+pip install git+https://github.com/EterNomm/Whitehat
 ```
 
 ## Example
