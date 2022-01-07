@@ -8,6 +8,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/EterNomm/Whitehat?label=Forks)](https://github.com/EterNomm/Whitehat/network)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/EterNomm/whitehat?label=Pull%20Requests)](https://github.com/EterNomm/Whitehat/pulls)
 [![Discord](https://img.shields.io/discord/887650006977347594?color=blue&label=EterNomm&logo=discord)](https://discord.com/invite/qpT2AeYZRN)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FEterNomm%2FWhitehat.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FEterNomm%2FWhitehat?ref=badge_shield)
 
 # Whitehat
 
@@ -49,3 +50,7 @@ pip install git+https://github.com/EterNomm/Whitehat
 ## Other
 - Want to be a contributor? [Pull Request](https://github.com/EterNomm/Whitehat/pulls) are welcome :3
 - Join our Discord Server [Here](https://discord.com/invite/qpT2AeYZRN)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FEterNomm%2FWhitehat.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FEterNomm%2FWhitehat?ref=badge_large)
