@@ -29,7 +29,7 @@
 - Reverse Shell
 - See Browser history (Beta)
 - Brute Force
-- Common Cryptography encryption, such as Caesar Cipher, Morse, Binary
+- Common Cryptography encryption, such as [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher), [Morse](https://en.wikipedia.org/wiki/Morse_code), [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher), [etc](https://github.com/EterNomm/Whitehat/tree/main/whitehat/cryptography_method)
 
 ## Install
 - ### PIP
