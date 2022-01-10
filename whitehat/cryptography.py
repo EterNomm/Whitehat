@@ -1,9 +1,17 @@
 from .cryptography_method.caesar_cipher import *
 from .cryptography_method.morse import *
 from .cryptography_method.binary import *
+from .cryptography_method.vigenere_cipher import *
 
 class Cryptography:
-
+    r"""A core class that implements common Cryptography
+    -----------
+    Class :
+    - CaesarCipher
+    - VigenereCipher
+    - Morse
+    - Binary
+    """
     def __init__(self):
         pass
 
@@ -96,3 +104,35 @@ class Cryptography:
             """
 
             return binary_method.decrypt(binary)
+
+    class VigenereCipher:
+        r"""A class that implements VigenereCipher encryption
+        -----------
+        Classmethod :
+        - encrypt
+        - decrypt
+        """
+        def __init__(self):
+            pass
+
+        @classmethod
+        def encrypt(self, text:str, key:str):
+            r"""A method that implements encrypting strings to Vigenere Cipher encryption
+            -----------
+            Parameters :
+            - text: `str` | Set string to encrypt
+            - key: `str` | Set key encryption
+            """
+
+            return vigenerecipher_method.encrypt(text, key)
+
+        @classmethod
+        def decrypt(self, cipher:str, key:str):
+            r"""A method that implements Vigenere Cipher decryption to string
+            -----------
+            Parameters :
+            - cipher: `str` | Set Vigenere Cipher string to decrypt
+            - key: `str | Set key encryption
+            """
+
+            return vigenerecipher_method.decrypt(cipher, key)
