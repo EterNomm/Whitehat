@@ -49,3 +49,10 @@ pip install git+https://github.com/EterNomm/Whitehat
 ## Other
 - Want to be a contributor? [Pull Request](https://github.com/EterNomm/Whitehat/pulls) are welcome :3
 - Join our Discord Server [Here](https://discord.com/invite/qpT2AeYZRN)
+
+## Licence & Copyright
+
+```
+This Project under Apache License 2.0
+Copyright (c) 2021-present EterNomm
+```
