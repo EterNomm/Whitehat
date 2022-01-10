@@ -1,7 +1,7 @@
-from .cryptography_method.caesar_cipher import *
-from .cryptography_method.morse import *
-from .cryptography_method.binary import *
-from .cryptography_method.vigenere_cipher import *
+from .cryptography_functions.caesar_cipher import *
+from .cryptography_functions.morse import *
+from .cryptography_functions.binary import *
+from .cryptography_functions.vigenere_cipher import *
 
 class Cryptography:
     r"""A core class that implements common Cryptography
