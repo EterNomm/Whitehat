@@ -1,4 +1,4 @@
-class binary_method:
+class binary_function:
     def __init__(self):
         pass
 
