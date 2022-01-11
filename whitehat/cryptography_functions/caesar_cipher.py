@@ -1,7 +1,7 @@
 import string
 from ..errors import *
 
-class CaesarCipher:
+class CaesarCipher_function:
 
     def __init__(self):
         pass
