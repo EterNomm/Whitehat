@@ -14,7 +14,7 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
                     '?':'..--..', '/':'-..-.', '-':'-....-',
                     '(':'-.--.', ')':'-.--.-'}
 
-class morse_method:
+class morse_function:
     def __init__(self):
         pass
 
