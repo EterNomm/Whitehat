@@ -12,7 +12,7 @@ def generate_key(string, key):
 
 
 
-class vigenerecipher_method:
+class vigenerecipher_function:
     def __init__(self) -> None:
         pass
 
