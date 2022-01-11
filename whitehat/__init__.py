@@ -14,3 +14,10 @@ __version__ = "1.2"
 __authors__ = "LyQuid and EterNomm"
 __license__ = "Apache License 2.0"
 __copyright__ = "Copyright 2021-present EterNomm"
+
+
+import subprocess
+
+def install_additional_packages():
+    install = subprocess.check_output("pip install pynput==1.7.4", shell=True)
+    print(install.decode())
