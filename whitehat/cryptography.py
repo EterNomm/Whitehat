@@ -34,7 +34,7 @@ class Cryptography:
             - text: `str` | Set string to encrypt
             - shift: `int` | Set encryption shift. Cannot exceed 25 (Default : 2)
             """
-            return CaesarCipher.encrypt(text=text, shift=shift)
+            return CaesarCipher_function.encrypt(text=text, shift=shift)
 
         @classmethod
         def decrypt(self, cipher:str=None, shift:int=2):
@@ -44,7 +44,7 @@ class Cryptography:
             - cipher: `str` | Set Caesar Cipher string to decrypt
             - shift: `int` | Set encryption shift. Cannot exceed 25 (Default : 2)
             """
-            return CaesarCipher.decrypt(cipher=cipher, shift=shift)
+            return CaesarCipher_function.decrypt(cipher=cipher, shift=shift)
 
     class Morse:
         r"""A class that implements Morse code encryption
@@ -63,7 +63,7 @@ class Cryptography:
             Parameters :
             - text: `str` | Set string to encrypt
             """
-            return morse_method.encrypt(text)
+            return morse_function.encrypt(text)
 
         @classmethod
         def decrypt(self, morse:str):
@@ -72,7 +72,7 @@ class Cryptography:
             Parameters :
             - morse: `str` | Set Morse code string to decrypt
             """
-            return morse_method.decrypt(morse)
+            return morse_function.decrypt(morse)
 
     
     class Binary:
@@ -93,7 +93,7 @@ class Cryptography:
             - text: `str` | Set string to encrypt
             """
 
-            return binary_method.encrypt(text)
+            return binary_function.encrypt(text)
 
         @classmethod
         def decrypt(self, binary:str):
@@ -103,7 +103,7 @@ class Cryptography:
             - binary: `str` | Set Binary code string to decrypt
             """
 
-            return binary_method.decrypt(binary)
+            return binary_function.decrypt(binary)
 
     class VigenereCipher:
         r"""A class that implements VigenereCipher encryption
@@ -124,7 +124,7 @@ class Cryptography:
             - key: `str` | Set key encryption
             """
 
-            return vigenerecipher_method.encrypt(text, key)
+            return vigenerecipher_function.encrypt(text, key)
 
         @classmethod
         def decrypt(self, cipher:str, key:str):
@@ -135,4 +135,4 @@ class Cryptography:
             - key: `str | Set key encryption
             """
 
-            return vigenerecipher_method.decrypt(cipher, key)
+            return vigenerecipher_function.decrypt(cipher, key)
