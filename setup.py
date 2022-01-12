@@ -37,15 +37,18 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=read_requirements(),
-    keywords=["python", "hacker", "whitehat", "hacker tool", "ethical hacking"],
+    keywords=["python", "hacking", "whitehat", "hacking tool", "ethical hacking"],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: Android',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: MacOS',
-        'Operating System :: POSIX :: Linux',
-        'Programming Language :: Python'
+        'Operating System :: POSIX :: Linux'
     ]
 )
