@@ -2,7 +2,7 @@
 [![Downloads](https://pepy.tech/badge/whitehat)](https://pepy.tech/project/whitehat)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/whitehat?label=PyPI%20Downloads&logo=pypi)](https://pypi.org/project/whitehat)
 [![PyPI - Version](https://img.shields.io/pypi/v/whitehat?label=PyPI%20Version&logo=pypi)](https://pypi.org/project/whitehat)
-[![PyPI - Status](https://img.shields.io/pypi/status/whitehat?label=Packages%20Status&logo=pypi)](https://pypi.org/project/whitehat#data)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/whitehat?label=Python%20Version&logo=python)](https://pypi.org/project/whitehat#data)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/EterNomm/Whitehat?label=Commit%20Activity)](https://github.com/EterNomm/Whitehat/commits/main)
 [![GitHub stars](https://img.shields.io/github/stars/EterNomm/Whitehat?label=Stars)](https://github.com/EterNomm/Whitehat/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/EterNomm/Whitehat?label=Forks)](https://github.com/EterNomm/Whitehat/network)
@@ -27,7 +27,7 @@
 - Keylogger
 - Port Scanner
 - Reverse Shell
-- See Browser history (Beta)
+- See Browser history
 - Brute Force
 - Common Cryptography encryption, such as [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher), [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher), [Morse](https://en.wikipedia.org/wiki/Morse_code), [etc](https://github.com/EterNomm/Whitehat/tree/main/whitehat/cryptography_functions)
 
