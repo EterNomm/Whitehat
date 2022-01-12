@@ -3,7 +3,7 @@ from .errors import *
 try:
     from pynput.keyboard import Key, Listener
 except ImportError:
-    raise InstallAdditionalPackages
+    raise InstallAdditionalPackages("pynput")
 
 import logging
 
