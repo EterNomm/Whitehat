@@ -38,4 +38,4 @@ class ShiftExceededTheLimit(WhitehatErrors):
 
 class InstallAdditionalPackages(WhitehatErrors):
     def __init__(self, packages:str="additional"):
-        super().__init__(f"\nYou must install {packages} packages.\ntry 'whitehat.install_additional_packages()' or https://github.com/EterNomm/Whitehat/blob/main/additional_packages.txt")
+        super().__init__(f"\n\nYou must install {packages} packages.\ntry 'whitehat.install_additional_packages()' or https://github.com/EterNomm/Whitehat/blob/main/additional_packages.txt")
