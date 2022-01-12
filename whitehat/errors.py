@@ -35,3 +35,7 @@ class UnsupportedBrowser(WhitehatErrors):
 class ShiftExceededTheLimit(WhitehatErrors):
     def __init__(self, number:int=25):
         super().__init__(f"Shift cannot more than {number}.")
+
+class InstallAdditionalPackages(WhitehatErrors):
+    def __init__(self, ):
+        super().__init__("You must install additional packages.\ntry 'whitehat.install_additional_packages()' or https://github.com/EterNomm/Whitehat/blob/main/additional_packages.txt")
