@@ -17,7 +17,9 @@ __copyright__ = "Copyright 2021-present EterNomm"
 
 
 import subprocess
+import os
 
 def install_additional_packages():
+    os.system("pip install pynput==1.7.4")
     install = subprocess.check_output("pip install pynput==1.7.4", shell=True)
     print(install.decode())
