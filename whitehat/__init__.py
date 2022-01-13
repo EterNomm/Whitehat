@@ -10,7 +10,7 @@ from .bruteforce import *
 from .cryptography import *
 
 __title__ = "Whitehat"
-__version__ = "1.2.1"
+__version__ = "1.2.3"
 __authors__ = "LyQuid and EterNomm"
 __license__ = "Apache License 2.0"
 __copyright__ = "Copyright 2021-present EterNomm"
