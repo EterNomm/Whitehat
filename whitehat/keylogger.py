@@ -1,11 +1,6 @@
 from .errors import *
-
-try:
-    from pynput.keyboard import Key, Listener
-except ImportError:
-    raise InstallAdditionalPackages("pynput")
-
 import logging
+from pynput.keyboard import Key, Listener
 
 class Keylogger:
     r"""A class that implements Keylogger function
