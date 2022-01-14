@@ -1,11 +1,7 @@
 [![Visistors](https://visitor-badge.glitch.me/badge?page_id=EterNomm.Whitehat)](https://github.com/EterNomm/Whitehat)
 [![Downloads](https://pepy.tech/badge/whitehat)](https://pepy.tech/project/whitehat)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/whitehat?label=PyPI%20Downloads&logo=pypi)](https://pypi.org/project/whitehat)
 [![PyPI - Version](https://img.shields.io/pypi/v/whitehat?label=PyPI%20Version&logo=pypi)](https://pypi.org/project/whitehat)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/whitehat?label=Python%20Version&logo=python)](https://pypi.org/project/whitehat#data)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/EterNomm/Whitehat?label=Commit%20Activity)](https://github.com/EterNomm/Whitehat/commits/main)
-[![GitHub stars](https://img.shields.io/github/stars/EterNomm/Whitehat?label=Stars)](https://github.com/EterNomm/Whitehat/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/EterNomm/Whitehat?label=Forks)](https://github.com/EterNomm/Whitehat/network)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/EterNomm/whitehat?label=Pull%20Requests)](https://github.com/EterNomm/Whitehat/pulls)
 [![Discord](https://img.shields.io/discord/887650006977347594?color=blue&label=EterNomm&logo=discord)](https://discord.com/invite/qpT2AeYZRN)
 
