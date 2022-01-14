@@ -2,6 +2,7 @@ from .cryptography_functions.caesar_cipher import *
 from .cryptography_functions.morse import *
 from .cryptography_functions.binary import *
 from .cryptography_functions.vigenere_cipher import *
+from .cryptography_functions.arithmos_cipher import *
 
 class Cryptography:
     r"""A core class that implements common Cryptography
@@ -14,6 +15,36 @@ class Cryptography:
     """
     def __init__(self):
         pass
+
+    class ArithmosCipher:
+        r"""A class that implements Arithmos Cipher encryption.
+        Maybe many of you don't know this cipher, because I made this cipher myself.
+        ------
+        Classmethod :
+        - encrypt
+        - decrypt
+        """
+        def __init__(self):
+            pass
+
+        @classmethod
+        def encrypt(self, text:str):
+            r"""A method that implements encrypting strings to Arithmos Cipher encryption
+            -----------
+            Parameters :
+            - text: `str` | Set string to encrypt
+            """
+
+            return ArithmosCipher_function.encrypt(text)
+        
+        @classmethod
+        def decrypt(self, cipher:int):
+            r"""A method that implements Arithmos Cipher decryption to string
+            -----------
+            Parameters :
+            - cipher: `int` | Set Arithmos Cipher string to decrypt
+            """
+            return ArithmosCipher_function.decrypt(cipher)
 
     class CaesarCipher:
         r"""A class that implements Caesar Cipher encryption
@@ -32,7 +63,7 @@ class Cryptography:
             -----------
             Parameters :
             - text: `str` | Set string to encrypt
-            - shift: `int` | Set encryption shift. Cannot exceed 25 (Default : 2)
+            - shift: `int` | Set encryption shift. Cannot exceed 26 (Default : 2)
             """
             return CaesarCipher_function.encrypt(text=text, shift=shift)
 
@@ -42,7 +73,7 @@ class Cryptography:
             -----------
             Parameters :
             - cipher: `str` | Set Caesar Cipher string to decrypt
-            - shift: `int` | Set encryption shift. Cannot exceed 25 (Default : 2)
+            - shift: `int` | Set encryption shift. Cannot exceed 26 (Default : 2)
             """
             return CaesarCipher_function.decrypt(cipher=cipher, shift=shift)
 
