@@ -15,6 +15,7 @@
 - DDoS
 - Key Logger
 - Reverse Shell
+- Cryptography
 
 ## Features
 - DDoS (Can up to 1500+ Requests per seconds)
