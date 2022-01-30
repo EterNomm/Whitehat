@@ -106,7 +106,7 @@ class PNG:
 
 
 
-class JPEG:
+class JPG:
     """
     Function for JPG/JPEG.
     -
