@@ -2,3 +2,4 @@ python-socketio==5.4.1
 phonenumbers==8.12.36
 tqdm
 pynput==1.7.4
+arithmos-cipher
