@@ -58,7 +58,7 @@ class Cryptography:
             pass
 
         @classmethod
-        def encrypt(self, text:str=None, shift:int=2):
+        def encrypt(self, text:str, shift:int=2):
             r"""A method that implements encrypting strings to Caesar Cipher encryption
             -----------
             Parameters :
@@ -68,7 +68,7 @@ class Cryptography:
             return CaesarCipher_function.encrypt(text=text, shift=shift)
 
         @classmethod
-        def decrypt(self, cipher:str=None, shift:int=2):
+        def decrypt(self, cipher:str, shift:int=2):
             r"""A method that implements Caesar Cipher decryption to string
             -----------
             Parameters :
