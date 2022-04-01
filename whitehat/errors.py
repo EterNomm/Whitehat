@@ -21,7 +21,7 @@ class InvalidURL(WhitehatErrors):
         super().__init__("Invalid URL. Cannot include: http:// or https://")
 
 class UnsupportedOS(WhitehatErrors):
-    def __init__(self, OS:str="Your OS", supported_os:str=None):
+    def __init__(self, OS:str="Your OS", supported_os:str):
         super().__init__(f"{OS} is not supported on this function. Supported OS : {supported_os}.")
 
 class CannotNone(WhitehatErrors):
