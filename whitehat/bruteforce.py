@@ -10,13 +10,13 @@ class BruteForce:
     - wordlist: :class:`str` | Set wordlist to run Brute Force
     """
 
-    def __init__(self, wordlist:str=None):
+    def __init__(self, wordlist:str):
         if wordlist == None:
             raise CannotNone("wordlist")
         else:
             self.wodlist = wordlist
 
-    def zip(self, zip_path:str=None):
+    def zip(self, zip_path:str):
         r"""A method that implements the Brute Force function on Zip
         -----------
         Parameters :
