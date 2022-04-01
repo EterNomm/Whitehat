@@ -16,13 +16,13 @@ class PNG:
     - reveal_message
     - reveal_program
     """
-    def __init__(self, image_path:str=None):
+    def __init__(self, image_path:str):
         if image_path == None:
             raise CannotNone("image_path")
             
         self.image_path = image_path
 
-    def hide_message(self, message:str=None):
+    def hide_message(self, message:str):
         """
         Method to hide message in PNG file.
         -----
@@ -41,7 +41,7 @@ class PNG:
 
 
 
-    def hide_program(self, program_path:str=None):
+    def hide_program(self, program_path:str):
         """
         Method to hide program (`.exe`) in PNG file.
         -----
@@ -77,7 +77,7 @@ class PNG:
             f.seek(offset + len(end_hex))
             return f.read().decode(encoding)
     
-    def reveal_program(self, new_name:str=None):
+    def reveal_program(self, new_name:str):
         """
         Method to reveal secret program and create new file (`.exe`) from inside PNG file.
         -
@@ -121,12 +121,12 @@ class JPG:
     - reveal_program
     """
 
-    def __init__(self, image_path:str=None):
+    def __init__(self, image_path:str):
         if image_path == None:
             raise CannotNone("image_path")
         self.image_path = image_path
 
-    def hide_message(self, message:str=None):
+    def hide_message(self, message:str):
         """
         Method to hide message in JPG/JPEG file.
         -----
@@ -144,7 +144,7 @@ class JPG:
         print("Success!")
 
 
-    def hide_program(self, program_path:str=None):
+    def hide_program(self, program_path:str):
         """
         Method to hide program (`.exe`) in JPG/JPEG file.
         -----
@@ -180,7 +180,7 @@ class JPG:
 
             return f.read().decode(encoding)
     
-    def reveal_program(self, new_name:str=None):
+    def reveal_program(self, new_name:str):
         """
         Method to reveal secret program and create new file (`.exe`) from inside JPG/JPEG file.
         -
