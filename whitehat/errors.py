@@ -25,7 +25,7 @@ class UnsupportedOS(WhitehatErrors):
         super().__init__(f"{OS} is not supported on this function. Supported OS : {supported_os}.")
 
 class CannotNone(WhitehatErrors):
-    def __init__(self, parameter:str=None):
+    def __init__(self, parameter:str):
         super().__init__(f"'{parameter}' parameter cannot None.")
 
 class UnsupportedBrowser(WhitehatErrors):
@@ -35,7 +35,3 @@ class UnsupportedBrowser(WhitehatErrors):
 class ShiftExceededTheLimit(WhitehatErrors):
     def __init__(self, number:int=25):
         super().__init__(f"Shift cannot more than {number}.")
-
-class InstallAdditionalPackages(WhitehatErrors):
-    def __init__(self, packages:str="additional"):
-        super().__init__(f"\n\nYou must install {packages} packages.\ntry 'whitehat.install_additional_packages()' or https://github.com/EterNomm/Whitehat/blob/main/additional_packages.txt")
