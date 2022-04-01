@@ -10,7 +10,7 @@ class Keylogger:
     """
     
     @classmethod
-    def start(self, logfile_path:str=None, allow_print=False):
+    def start(self, logfile_path:str, allow_print=False):
         r"""Start Keylogger
         -----------
         Paramaters :
