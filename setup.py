@@ -22,8 +22,8 @@ def read_requirements():
 setup(
     name='whitehat',
     version=version,
-    author='LyQuid',
-    author_email='lyquidpersonal@gmail.com',
+    author='EterNomm',
+    author_email='eternommorg@gmail.com',
     description = 'Python Packages For Ethical Hacking',
     long_description=long_description,
     long_description_content_type='text/markdown',
