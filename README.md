@@ -1,3 +1,8 @@
+> **This project has been archived, we don't know when it will be continued.**
+> **If you have any questions, you are very welcome to ask on our Discord.**
+> **[Reasons and more detailed explanations.](https://gist.github.com/LyQuid12/281d0db00d672695d9ad01e62a28f591)**
+<br>
+
 [![Visistors](https://visitor-badge.glitch.me/badge?page_id=EterNomm.Whitehat)](https://github.com/EterNomm/Whitehat)
 [![Downloads](https://pepy.tech/badge/whitehat)](https://pepy.tech/project/whitehat)
 [![PyPI - Version](https://img.shields.io/pypi/v/whitehat?label=PyPI%20Version&logo=pypi)](https://pypi.org/project/whitehat)
