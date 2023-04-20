@@ -1,5 +1,5 @@
 > **This project has been archived, we don't know when it will be continued.**
-> **If you have any questions, you are very welcome to ask on our Discord.**
+> **If you have any questions, you are very welcome to ask on our Discord server.**
 > **[Reasons and more detailed explanations.](https://gist.github.com/LyQuid12/281d0db00d672695d9ad01e62a28f591)**
 <br>
 
